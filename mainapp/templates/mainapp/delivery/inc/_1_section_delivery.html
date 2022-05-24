@@ -1,0 +1,38 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="col-12 col-sm-6 py-5">
+    <h2 class="text-center my-5 text-font-very-bold" style="color:#B49359;" data-aos="fade-down">
+        {% blocktrans trimmed %}
+        Delivery and distribution
+        {% endblocktrans %}
+    </h2>
+    <h5 class="title-font" data-aos="fade-right">
+        {% blocktrans trimmed %}
+        Our company is interested in the cooperation and development of the professional
+        ice market throughout Spain. We are able to offer large quantities of our ice for
+        sale at a competitive wholesale price. In addition, we already have a customer
+        base in many cities in Spain and the demand for craft ice continues to grow.<br/>
+        <br/>
+        If you are ready to become part of the great family of the artisanal ice market,
+        contact us for detailed contact information.
+        {% endblocktrans %}
+    </h5>
+    <div class="d-flex gap-1 justify-content-around pt-5" data-aos="fade-up">
+        <a style="width:150px;"
+           href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20distribution%20"
+           class="btn-electric-dark text-center">whatsapp</a>
+        <a style="width:150px;"
+           href="{% url 'contacts' %}"
+           class="btn-electric-dark text-center">email</a>
+    </div>
+</div>
+
+<div class="col-12 col-sm-6 " data-aos="fade-left">
+    <div class="card equal-1-1 inverted">
+        <figure class="background"
+                style="background-image: url({% static 'Zeice/img/delivery-box.jpg' %})">
+        </figure>
+    </div>
+</div>

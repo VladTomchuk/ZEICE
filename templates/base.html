@@ -1,0 +1,45 @@
+{% load static %}
+{% load i18n %}
+{% load active_link_tags %}
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'Zeice/img/Logo.svg' %}"/>
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="{% static 'Zeice/dist/assets/css/libs.bundle.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'Zeice/dist/assets/css/index.bundle.css' %}">
+    <link rel="stylesheet" href="{% static 'Zeice/css/base.css' %}">
+    <!-- Title -->
+    <title>ZEICE | {{ title }}</title>
+</head>
+
+<body>
+
+<!--nav-->
+{% include 'inc/_nav.html' %}
+
+{% block content %}{% endblock %}
+
+<!-- footer -->
+{% include 'inc/_footer.html' %}
+
+
+<!-- javascript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<script src="{% static 'Zeice/dist/assets/js/vendor.bundle.js' %}"></script>
+<script src="{% static 'Zeice/dist/assets/js/index.bundle.js' %}"></script>
+</body>
+
+</html>

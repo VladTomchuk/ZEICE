@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load static %}
+
+
+<h1 style="color:#B49359;" class="text-font-very-bold">
+    {% blocktrans trimmed %}
+    Interested in working together? Contact us!
+    {% endblocktrans %}
+</h1>
+
+<p class="title-font fs-6">
+    {% blocktrans trimmed %}
+    Contact us for get detailed information about: cooperation, ordering or feedback.<br/>
+    We will be glad to answer all your questions!
+    {% endblocktrans %}
+</p>
+
+<ul class="list-group list-group-minimal px-5 my-5">
+    <li class="list-group-item d-flex align-items-center justify-content-between">
+        <span class="text-muted">{% trans "Location " %}:</span>
+        Barcelona, {% trans "Spain " %}
+    </li>
+    <li class="list-group-item d-flex align-items-center justify-content-between">
+        <span class=" text-muted ">{% trans "Email " %}:</span>
+        info@zeice.es
+    </li>
+    <li class="list-group-item d-flex align-items-center justify-content-between">
+        <span class=" text-muted">{% trans "Phone" %} :</span>
+        +34 698 458 286
+    </li>
+    <li class="list-group-item d-flex align-items-center justify-content-between">
+        <span class=" text-muted">Instagram :</span>
+        <a class="" href="https://www.instagram.com/zeicebcn/"><span style="color: black;">@zeicebcn</span></a>
+    </li>
+</ul>

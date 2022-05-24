@@ -1,0 +1,124 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="container foreground">
+    <div class="row justify-content-between">
+        <div class="col-12 col-sm-5" style="display:flex; flex-direction: column; justify-content:space-around;">
+            <h1 style="color:#B49359;" class="text-font-very-bold mb-5">
+                {% blocktrans trimmed %}
+                Services
+                {% endblocktrans %}
+            </h1>
+            <h5 class="my-5 title-font fs-4">
+                {% blocktrans trimmed %}
+                Our types of services that we provide in addition to the main product - ice.
+                {% endblocktrans %}
+            </h5>
+        </div>
+        <div class="col-12 col-sm-7">
+            <div class="row">
+                <div class="col-12 col-sm-6 ice p-2" data-aos="fade-down-right">
+                    <a href="{% url 'ice' %}" class="card card-arrow card-hover-arrow equal-1-1 inverted"
+                       data-aos="fade-up">
+                        <figure class="background"
+                                style="background-image: url({% static 'Zeice/img/ice-types1.jpg' %})">
+                        </figure>
+                        <div class="card-wrap">
+                            <div class="card-footer mt-auto service-card-bg">
+                                <h4 class="card-title">
+                                    {% blocktrans trimmed %}
+                                    Ice types
+                                    {% endblocktrans %}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 ice p-2" data-aos="fade-down-left">
+                    <a href="{% url 'delivery' %}" class="card card-arrow card-hover-arrow equal-1-1 inverted"
+                       data-aos="fade-up">
+                        <figure class="background"
+                                style="background-image: url({% static 'Zeice/img/delivery-box.jpg' %})">
+                        </figure>
+                        <div class="card-wrap">
+                            <div class="card-footer mt-auto service-card-bg">
+                                <h4 class="card-title">
+                                    {% blocktrans trimmed %}
+                                    Distribution
+                                    {% endblocktrans %}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 ice p-2" data-aos="fade-up-right">
+                    <a class="card card-arrow card-hover-arrow equal-1-1 inverted" data-aos="fade-up"
+                       data-bs-toggle="modal" data-bs-target="#modal-1">
+                        <figure class="background"
+                                style="background-image: url({% static 'Zeice/img/rent-fridge.gif' %})">
+                        </figure>
+                        <div class="card-wrap">
+                            <div class="card-footer mt-auto service-card-bg">
+                                <h4 class="card-title">
+                                    {% blocktrans trimmed %}
+                                    Refrigerators
+                                    {% endblocktrans %}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 ice p-2" data-aos="fade-up-left">
+                    <a href="{% url 'zebartools' %}" class="card card-arrow card-hover-arrow equal-1-1 inverted">
+                        <figure class="background"
+                                style="background-image: url({% static 'Zeice/img/zebartools.png' %})">
+                        </figure>
+                        <div class="card-wrap">
+                            <div class="card-footer mt-auto service-card-bg">
+                                <h4 class="card-title">
+                                    {% blocktrans trimmed %}
+                                    Not just ice...
+                                    {% endblocktrans %}
+                                </h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<img class="position-absolute top-0 start-0 translate-middle"
+     src="{% static 'Zeice/img/svg/pattern-lg-light.svg' %}"
+     alt="Image">
+
+<div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button type="button" class="bi bi-x modal-close" data-bs-dismiss="modal"
+                    aria-label="Close">
+            </button>
+            <div style="height:70vh;" class="modal-body bg-body">
+                <h1 style="color:#B49359;" class="text-font-very-bold">
+                    {% blocktrans trimmed %}
+                    Rent of refrigerators for your bar.
+                    {% endblocktrans %}
+                </h1>
+                <h3 style="color: white;" class="title-font">
+                    {% blocktrans trimmed %}
+                    On the subject of renting a refrigerator, contact us:
+                    {% endblocktrans %}
+                </h3>
+                <div class="d-flex gap-1 justify-content-around">
+                    <a style="width:150px;"
+                       href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20refrigerators%20"
+                       class="btn-electric-dark text-center">whatsapp</a>
+                    <a style="width:150px;"
+                       href="{% url 'contacts' %}"
+                       class="btn-electric-dark text-center">email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

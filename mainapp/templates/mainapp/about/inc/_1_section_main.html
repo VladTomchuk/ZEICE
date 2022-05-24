@@ -1,0 +1,24 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="row align-items-end mb-10 mt-5">
+    <div class="col-lg-8">
+        <h1 style="color:#B49359;" class="m-0 text-font-very-bold">
+            {% blocktrans trimmed %}
+            ZEICE Craft Company
+            {% endblocktrans %}
+        </h1>
+        <h3 class="title-font dark-font"><br>
+            <span>
+                {% blocktrans trimmed %}
+                – a company dedicated to the production of quality, certified and pure ice
+                in the Spanish market.
+                {% endblocktrans %}
+            </span>
+        </h3>
+    </div>
+    <div class="col-12 col-md-4 text-lg-end">
+        <img style="width:30%;" class="mt-5 rotate" src="{% static 'Zeice/img/rounded2.svg' %}" alt="">
+    </div>
+</div>

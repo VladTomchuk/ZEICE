@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<div class="offcanvas-wrap bg-light">
+
+    <!-- hero -->
+    <section class="overflow-hidden pt-20 ">
+
+        <!-- main -->
+        <div class="container foreground">
+            {% include './inc/_1_section_main.html' %}
+        </div>
+
+        <!-- gallery -->
+        <div class="container gallery-1 foreground" data-aos="fade-up">
+            {% include './inc/_2_section_gallery.html' %}
+        </div>
+
+        <!-- steps accordion -->
+        <div class="px-xl-15 pt-15 py-sm-15 overflow-hidden ">
+            {% include './inc/_3_section_advantages.html' %}
+        </div>
+
+        <img class="position-absolute top-0 start-0 translate-middle"
+             src="{% static 'Zeice/img/svg/pattern-lg.svg' %}"
+             alt="Image">
+
+    </section>
+
+    <!-- About -->
+    <section class="mx-1 mx-sm-5 mt-5 px-0 px-sm-15 py-10 py-xl-15 overflow-hidden services-bg inverted"
+             data-aos="fade-up">
+        {% include './inc/_4_section_about.html' %}
+    </section>
+
+    <!-- clients -->
+    <section class="my-sm-0 py-10 px-7 py-sm-15">
+        {% include './inc/_5_section_clients.html' %}
+    </section>
+
+    <!-- ice quality -->
+    <section class="mt-5 py-5 px-xl-10 overflow-hidden services-bg inverted">
+        {% include './inc/_6_section_ice_quality.html' %}
+    </section>
+
+</div>
+{% endblock %}

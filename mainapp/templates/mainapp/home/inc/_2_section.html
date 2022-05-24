@@ -1,0 +1,110 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="container foreground">
+    <div class="row align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-md-10 col-lg-6 mb-5 mb-lg-0">
+            <h2 class="text-left py-5">
+                {% blocktrans trimmed %}
+                Why are we the best supplier of crafted ice?
+                {% endblocktrans %}
+            </h2>
+            <div class="row g-2">
+                <div class="col-md-6 m-0">
+                    <ul class="list-group list-group-minimal">
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Delivery - 6 days per week
+                            {% endblocktrans %}
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Support - 24/7
+                            {% endblocktrans %}
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Delivery emergency
+                            {% endblocktrans %}
+                            <span class="bg-electric-dark badge rounded-pill ms-2">
+                                    {% blocktrans trimmed %}
+                                    New
+                                {% endblocktrans %}</span>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Delivery to whole Spain
+                            {% endblocktrans %}
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 m-0">
+                    <ul class="list-group list-group-minimal">
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Best prices
+                            {% endblocktrans %}
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Certificate quality
+                            {% endblocktrans %}
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            Loyaluty politica of discounts
+                            {% endblocktrans %}
+                        </li>
+                        <li class="list-group-item d-flex align-items-center mb-1">
+                            <div class="icon-box icon-box-sm bg-opaque-green rounded-circle me-2"><i
+                                    class="bi bi-check2 text-green"></i>
+                            </div>
+                            {% blocktrans trimmed %}
+                            No minimum order
+                            {% endblocktrans %}
+                        </li>
+                    </ul>
+
+                </div>
+                <div class=" col-12 btn-container">
+                    <a href="{% url 'about' %}" class="btn-electric-dark">
+                        {% blocktrans trimmed %}
+                        More about us
+                        {% endblocktrans %}
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 col-lg-5 position-relative" data-aos='fade-up'>
+            <div class="equal-1-1 rounded-circle">
+                <figure class="background"
+                        style="background-image: url({% static 'Zeice/img/ice-block2.JPG' %})"></figure>
+            </div>
+            <img style="margin-left:0px; width:30%;" class="position-absolute bottom-0 start-0 rotate"
+                 src="{% static 'Zeice/img/rounded2.svg' %}" alt="">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+{% load static %}
+<!--{% load static i18n %}-->
+{% load active_link_tags %}
+<!--{% get_current_language as language %}-->
+
+<section class="pt-20 pb-3 overflow-hidden services-bg inverted">
+    <div class="container foreground">
+        <div class="row g-4 g-lg-5 mb-10">
+            <div class="col-md-3 text-center text-md-start">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'Zeice/img/Logo.svg' %}" style="width:80px;" alt="Logo">
+                </a>
+            </div>
+            <div class="col-md-4 col-lg-5 text-center text-md-start">
+                <div class="row">
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles {% active_link 'home' css_class='page-active' strict=True %}"
+                           href="{% url 'home' %}">
+                            {% trans "Home" %}
+                        </a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles  {% active_link 'about' css_class='page-active' strict=True %}"
+                           href="{% url 'about' %}">
+                            {% trans "About us" %}
+                        </a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles  {% active_link 'ice' css_class='page-active' strict=True %}"
+                           href="{% url 'ice' %}">
+                            {% trans "Ice" %}
+                        </a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles  {% active_link 'delivery' css_class='page-active' strict=True %}"
+                           href="{% url 'delivery' %}">
+                            {% trans "Delivery" %}
+                        </a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a href="#" class="my-link-styles  {% active_link 'rent' css_class='page-active' strict=True %}"
+                           data-bs-toggle="modal" data-bs-target="#modal-1">
+                            {% trans "Refrigerators" %}
+                        </a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles  {% active_link 'zebartools' css_class='page-active' strict=True %}"
+                           href="{% url 'zebartools' %}">
+                            ZeBarTools</a>
+                    </div>
+                    <div class="col-6 py-1">
+                        <a class="my-link-styles  {% active_link 'contacts' css_class='page-active' strict=True %}"
+                           href="{% url 'contacts' %}">{% trans "Contacts" %}</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row align-items-center g-1 g-lg-6 text-muted">
+            <div class="col-md-6 col-lg-5 order-lg-2 text-center text-md-start">
+                <ul class="list-inline small">
+                    <li class="list-inline-item"><a href="https://www.facebook.com/zeicebcn/" target="_blank" class="text-reset text-primary-hover">facebook</a></li>
+                    <li class="list-inline-item ms-1"><a href="https://www.instagram.com/zeicebcn/" target="_blank" class="text-reset text-primary-hover">instagram</a>
+                    </li>
+                    <li class="list-inline-item ms-1"><a href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20your%20ice%20" target="_blank" class="text-reset text-primary-hover">whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-4 text-center text-md-end order-lg-3">
+                <span class="small">Pasatge Llivia 5, Barcelona 08001, Spain</span>
+            </div>
+            <div class="col-lg-3 order-lg-1 text-center text-md-start">
+                <p class="small">Copyrights © 2022</p>
+            </div>
+        </div>
+    </div>
+
+</section>

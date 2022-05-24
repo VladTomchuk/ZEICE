@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+{% load active_link_tags %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block content %}
+
+<!-- header -->
+<section class="overflow-hidden bg-black" data-aos="fade-in">
+    {% include './inc/_1_section.html' %}
+</section>
+
+<!-- about us -->
+<section class="py-5 overflow-hidden py-sm-10 bg-light">
+    {% include './inc/_2_section.html' %}
+</section>
+
+<!-- services -->
+<section class="py-20  overflow-hidden services-bg inverted">
+    {% include './inc/_3_section.html' %}
+</section>
+
+<!-- our clients -->
+<section class=" my-sm-0 py-10 px-7 py-sm-15 bg-light">
+    {% include './inc/_4_section.html' %}
+</section>
+
+{% endblock %}

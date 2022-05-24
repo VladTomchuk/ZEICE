@@ -1,0 +1,128 @@
+{% load static %}
+{% load static i18n %}
+{% load active_link_tags %}
+
+
+<nav class="navbar navbar-expand-lg navbar-sticky navbar-dark">
+    <div class="container">
+        <a href="{% url 'home' %}" class="navbar-brand">
+            <img src="{% static 'Zeice/img/Logo.svg' %}" alt="Logo">
+        </a>
+
+        <ul class="navbar-nav navbar-nav-secondary order-lg-3">
+            <li class="nav-item">
+                <a class="burger nav-link nav-icon" data-bs-toggle="offcanvas" href="#offcanvasNav" role="button"
+                   aria-controls="offcanvasNav">
+                    <span class="bi bi-list"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNav" aria-labelledby="offcanvasNavLabel">
+    <div class="head-slide-menu">
+        <a href="{% url 'home' %}" class="navbar-brand">
+            <!--            <img src="{% static 'Zeice/img/Logo.svg' %}" style="width: 40px; height: 40px;" alt="Logo">-->
+        </a>
+        <button style="color:white;" type="button" class="bi bi-x modal-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div></div>
+    <div class="offcanvas-body">
+        <ul class="nav nav-minimal" id="toc-nav">
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'home' css_class='page-active' strict=True %}"
+                   href="{% url 'home' %}">{% trans "Home" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'about' css_class='page-active' strict=True %}"
+                   href="{% url 'about' %}">{% trans "About us" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'ice' css_class='page-active' strict=True %}"
+                   href="{% url 'ice' %}">{% trans "Ice" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'delivery' css_class='page-active' strict=True %}"
+                   href="{% url 'delivery' %}">{% trans "Delivery" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'rent' css_class='page-active' strict=True %}"
+                  href="#" data-bs-toggle="modal" data-bs-target="#modal-2">{% trans "Refrigerators" %}</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'zebartools' css_class='page-active' strict=True %}"
+                   href="{% url 'zebartools' %}">ZeBarTools</a>
+            </li>
+            <li class="nav-item">
+                <a class="my-link-styles fs-4 {% active_link 'contacts' css_class='page-active' strict=True %}"
+                   href="{% url 'contacts' %}">{% trans "Contacts" %}</a>
+            </li>
+        </ul>
+    </div>
+    <div class="offcanvas-footer">
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.facebook.com/zeicebcn/" target="_blank"
+                                            class="btn-social text-primary-hover"><i
+                    class="bi bi-facebook fs-lg"></i></a></li>
+            <li class="list-inline-item ms-1"><a href="https://www.instagram.com/zeicebcn/" target="_blank"
+                                                 class="btn-social text-primary-hover"><i
+                    class="bi bi-instagram fs-lg"></i></a></li>
+            <li class="list-inline-item ms-1"><a
+                    href="https://wa.me/34698458286?text=I'm%20interested%20in%20your%20car%20for%20sale"
+                    target="_blank" class="btn-social text-primary-hover"><i
+                    class="bi bi-whatsapp fs-lg"></i></a></li>
+        </ul>
+
+        <ul class="list-inline">
+            {% get_current_language as LANGUAGE_CODE %}
+            {% get_available_languages as LANGUAGES %}
+            {% get_language_info_list for LANGUAGES as languages %}
+
+            {% for lang in languages %}
+
+            <li class="list-inline-item">
+                <a href="/{{ lang.code }}/" target="" class="btn-social text-primary-hover ">
+                    {{ lang.name_local }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<div>
+    <a id="myBtn" class="bg-body" target="_blank"
+       href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20your%20ice%20"><img
+            src="{% static 'Zeice/img/whatsapp.png'%}" alt="whatsapp"></a>
+</div>
+
+<div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <button style="color:white;" type="button" class="bi bi-x modal-close" data-bs-dismiss="modal"
+                    aria-label="Close">
+            </button>
+            <div style="height:70vh;" class="modal-body bg-body">
+                <h1 style="color:#B49359;" class="text-font-very-bold">
+                    {% blocktrans trimmed %}
+                    Rent of refrigerators for your bar.
+                    {% endblocktrans %}
+                </h1>
+                <h3 style="color: white;" class="title-font">
+                    {% blocktrans trimmed %}
+                    On the subject of renting a refrigerator, contact us:
+                    {% endblocktrans %}
+                </h3>
+                <div class="d-flex gap-1 justify-content-around">
+                    <a style="width:150px;"
+                       href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20refrigerators%20"
+                       class="btn-electric-dark text-center">whatsapp</a>
+                    <a style="width:150px;"
+                       href="https://wa.me/34698458286?text=Hello!%20I'm%20interested%20in%20refrigerators%20"
+                       class="btn-electric-dark text-center">email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

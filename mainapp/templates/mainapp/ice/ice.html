@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+
+<section class="py-15 py-xl-20 overflow-hidden services-bg">
+    <div class="container foreground">
+        <div class="row d-flex justify-content-between align-items-center">
+            <h2 class="col-12 col-sm-6 text-center my-5" style="color:#B49359;">
+                {% blocktrans trimmed %}
+                Ice types
+                {% endblocktrans %}
+            </h2>
+            <div class="col-12 col-sm-6 text-center my-5">
+                <a class="btn-electric-dark"
+                   href="{% static 'Zeice/documents/price_list_01-05-2022.pdf' %}"
+                   download="price_list_01-05-2022.pdf"
+                   target="_blank">
+                    {% blocktrans trimmed %}
+                    Download the price list
+                    {% endblocktrans %}
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            {% for props in ice_type %}
+            <div class="col-12 col-md-6 col-lg-4 p-2" data-aos="zoom-in">
+                <a href="{{ props.get_absolute_url }}" target="_blank">
+                    <div class="card card-arrow card-hover-arrow inverted">
+                        <div class="equal-1-1">
+                            <img class="card-img-top" src="{{ props.image.url }}" alt="Card image">
+                        </div>
+                        <div class="card-body">
+                            <div class="my-card-title">
+                                <h5 class="text-font-bold">{{ props.title }}</h5>
+                            </div>
+                            <div>
+                                <p class="text-font-bold">{{ props.size }} cm</p>
+                            </div>
+                            <div>
+                                <p class="text-font-bold">{{ props.price }} € + 10% IVA</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <img class="position-absolute top-0 start-0 translate-middle"
+         src="{% static 'Zeice/img/svg/pattern-lg-light.svg' %}"
+         alt="Image">
+</section>
+
+{% endblock %}

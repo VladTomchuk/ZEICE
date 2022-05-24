@@ -13,9 +13,28 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
+from django.utils.translation import gettext_lazy as _
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from mainapp.views import change_language
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('i18n/', include('django_translation_flags.urls')),
+    path(_('admin/'), admin.site.urls),
+    path('', include('mainapp.urls')),
+    # path('change_language/',
+    #      change_language,
+    #      name='change_language')
 ]
+
+
+urlpatterns += i18n_patterns(
+    path('', include('mainapp.urls')),
+)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

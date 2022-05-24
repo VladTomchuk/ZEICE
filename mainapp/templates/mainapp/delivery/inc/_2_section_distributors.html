@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load static %}
+
+
+<h2 class="text-center my-5 text-font-very-bold " style="color:#B49359;">
+    {% blocktrans trimmed %}
+    Our distributors
+    {% endblocktrans %}
+</h2>
+
+{% for props in distributor %}
+
+<div class="row col-12 distibutor-item py-2 my-1" data-aos="fade-up">
+
+    <a href="https://www.{{props.website}}" target="_blank" class="col-12 col-sm-3 logo-distr">
+        <img src="{{props.logo.url}}" width="100%;" alt="logo">
+    </a>
+
+    <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center">
+        <h5 class="title-font">{{props.title}}</h5>
+    </div>
+
+    <div class="col-12 col-sm-3 d-flex justify-content-center align-items-center my-2">
+        <h5 class="title-font">{{props.location}}</h5>
+    </div>
+
+    <div class="col-12 col-sm-3 contact-link-distr ">
+        <a class="text-font-very-bold fs-6 my-2 m-sm-0" href="tel:{{props.phone_number}}">{{props.phone_number}}</a>
+        <a class="text-font-very-bold fs-6 my-2 m-sm-0" href="mailto:{{props.email}}">{{props.email}}</a>
+        <a class="text-font-very-bold fs-6 my-2 m-sm-0" href="https://www.{{props.website}}"
+           target="_blank">{{props.website}}</a>
+    </div>
+
+</div>
+
+{% endfor %}

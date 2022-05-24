@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load static i18n %}
+
+{% block content %}
+
+<section class="py-15 overflow-hidden services-bg">
+
+    <div class="container foreground ">
+        <div class="row g-5 justify-content-center justify-content-lg-between">
+
+            <div class="col-lg-6 position-relative">
+                {% include './inc/_1_section_ice_gallery.html' %}
+            </div>
+
+            <div class="col-lg-6 col-xl-5">
+                {% include './inc/_2_section_ice_info.html' %}
+            </div>
+
+        </div>
+    </div>
+
+    <img class="position-absolute top-0 start-0 translate-middle"
+         src="{% static 'Zeice/assets/images/svg/pattern-lg-light.svg' %}"
+         alt="Image">
+
+</section>
+
+{% endblock %}

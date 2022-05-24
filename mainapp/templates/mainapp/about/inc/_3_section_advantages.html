@@ -1,0 +1,180 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-12 col-sm-6 d-flex flex-column justify-content-around">
+            <h2 style="color:#B49359;" class="text-font-very-bold mb-5">
+                {% blocktrans trimmed %}
+                Why do we have more advantages ?
+                {% endblocktrans %}
+            </h2>
+            <h5 class="my-5 title-font fs-4 dark-font">
+                {% blocktrans trimmed %}
+                This ice is ideal for the preparation of cocktails or for cooling
+                strong alcoholic drinks, since due to the lack of impurities in the
+                hydration it does not change the taste qualities in the drink.
+                Due to its dense structure it has a very different heat transfer and melts much slower.
+                {% endblocktrans %}
+            </h5>
+        </div>
+
+        <div class="col-12 col-md-6 accordion accordion-steps" id="accordion-steps"
+             style="--bs-primary: #1d4b40;">
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-1">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-1" aria-expanded="false"
+                            aria-controls="collapse-steps-1">
+                        {% blocktrans trimmed %}
+                        Delivery - 6 days per week
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-1" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-1"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-2">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-2" aria-expanded="false"
+                            aria-controls="collapse-steps-2">
+                        {% blocktrans trimmed %}
+                        Support - 24/7
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-2" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-2"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-3">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-3" aria-expanded="false"
+                            aria-controls="collapse-steps-3">
+                        {% blocktrans trimmed %}
+                        Delivery emergency
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-3" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-3"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-4">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-4" aria-expanded="false"
+                            aria-controls="collapse-steps-4">
+                        {% blocktrans trimmed %}
+                        Delivery to whole Spain
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-4" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-3"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-5">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-5" aria-expanded="false"
+                            aria-controls="collapse-steps-5">
+                        <span>
+                            {% blocktrans trimmed %}
+                            Best prices
+                            {% endblocktrans %}
+                        </span>
+                    </button>
+                </h2>
+                <div id="collapse-steps-5" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-5"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-6">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-6" aria-expanded="false"
+                            aria-controls="collapse-steps-6">
+                        {% blocktrans trimmed %}
+                        Certificate quality
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-6" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-6"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <div class="m-3">
+                            <span class="lead text-secondary">ISO 22000:2018</span>
+                        </div>
+                        <div class="m-3">
+                            <span class="lead text-secondary">ISO/IEC 17021-1</span>
+                        </div>
+                        <div class="m-3">
+                            <span class="lead text-secondary">ILAC-MRA</span>
+                        </div>
+                        <div class="m-3">
+                            <span class="lead text-secondary">HACCP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item" data-aos="fade-right">
+                <h2 class="accordion-header" id="heading-steps-7">
+                    <button class="accordion-button fs-5 collapsed" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapse-steps-7" aria-expanded="false"
+                            aria-controls="collapse-steps-7">
+                        {% blocktrans trimmed %}
+                        No minimum order
+                        {% endblocktrans %}
+                    </button>
+                </h2>
+                <div id="collapse-steps-7" class="accordion-collapse collapse"
+                     aria-labelledby="heading-steps-7"
+                     data-bs-parent="#accordion-steps">
+                    <div class="accordion-body">
+                        <p class="text-secondary"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

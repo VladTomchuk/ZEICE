@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+    <div class="webpage-message">
+        <div class="row">
+            <div class="header-webpage-message col-12">
+                <h2>{% trans 'Dear' %} <span>{{ message_name }}</span></h2>
+            </div>
+            <div class="header-webpage-message col-12">
+                <h2>{% trans 'Thank you for submitting your request for communicate you!' %}</h2>
+            </div>
+            <div class="header-webpage-message col-12">
+                <h5>{% trans 'In the near future our manager will contact you to receive detailed information.' %}</h5>
+            </div>
+            <div class="header-webpage-message col-12">
+                <h5>{% trans 'You have sent this data' %} :</h5>
+            </div>
+            <div class="row client-dates">
+                <div class="n col-12 col-md-6"><h5>{% trans 'Name' %}:</h5></div>
+                <div class="p col-12 col-md-6"><p><strong>{{ message_name }}</strong></p></div>
+                <div class="n col-12 col-md-6"><h5>{% trans 'Email' %}:</h5></div>
+                <div class="p col-12 col-md-6"><p><strong>{{ message_email }}</strong></p></div>
+                <div class="n col-12 col-md-6"><h5>{% trans 'Phone' %}:</h5></div>
+                <div class="col-12 col-md-6">
+                    <a class="p" href="tel:{{ message_phone }}">{{ message_phone }}</a>
+                </div>
+                <div class="n col-12 col-md-6"><h5>{% trans 'Comment' %}:</h5></div>
+                <div class="p col-12 col-md-6"><p><strong>{{ message_comment }}</strong></p></div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

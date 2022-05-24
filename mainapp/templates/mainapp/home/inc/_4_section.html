@@ -1,0 +1,29 @@
+{% load i18n %}
+{% load static %}
+
+
+<h2 class="my-5 text-font-very-bold dark-font text-center">
+    {% blocktrans trimmed %}
+    Our clients
+    {% endblocktrans %}
+</h2>
+<div class="carousel bg-light">
+    <div class="" data-carousel='{
+                "autoplay": true,
+                "autoplayButtonOutput": false,
+                "autoplayButton": false,
+                "mouseDrag": true,
+                "gutter": 20,
+                "loop": true,
+                "items": 1,
+                "nav": false,
+                "responsive": {"0": {"items": 1}, "768": {"items": 3}, "992": {"items": 3}, "1200": {"items": 4}}}'>
+        {% for p in clients %}
+        <div class=" box-shadow1 bg-light">
+            <figure class="equal-1-1 filter-grey "
+                    style="background-image: url('{{ p.logo.url }}');">
+            </figure>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,61 @@
+@media only screen and (max-width: 576px) {
+    .webpage-message {
+        padding: 5% 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+
+    .row .client-dates {
+        padding: 0 0 5% 0;
+    }
+    .row .client-dates div .n{
+        text-align: left;
+    }
+    .row .client-dates div{
+        padding-bottom: 2%;
+    }
+}
+
+@media only screen and (min-width: 577px) {
+    .webpage-message {
+        padding: 5% 10% 10% 5%;
+        letter-spacing: 1px;
+    }
+
+    .row .client-dates {
+        padding: 0 25%;
+    }
+    .row .client-dates div{
+        padding-bottom: 2%;
+    }
+}
+.p{
+    color: var(--title);
+    letter-spacing: 1px;
+}
+.n. h5{
+    margin-bottom: 0 !important;
+
+}
+
+.header-webpage-message{
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.header-webpage-message h5 {
+    padding: 2%;
+}
+
+.header-webpage-message h2 span {
+    color: var(--title);
+}
+
+.item-link{
+    color: var(--title);
+    transition: ease 0.5s;
+}
+
+.item-link:hover{
+    color: var(--white_main);
+}

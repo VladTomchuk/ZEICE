@@ -1,0 +1,36 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="row ">
+    <div class="col-md-10 order-md-2">
+        <div class="carousel box-shadow2">
+            <div data-carousel='{
+                            "mouseDrag": true,
+                            "navContainer": "#nav-1",
+                            "gutter": 0,
+                            "loop": true,
+                            "items": 1}'>
+                {% for photo in photos %}
+                <div class="col-12 col-md-6 col-lg-4 " data-aos="zoom-in">
+                    <div class="card slide inverted ">
+                        <div class="equal-1-1">
+                            <img class="card-img-top" src="{{ photo.image.url }}" alt="Card image">
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2 order-md-1 p-0">
+        <div class="cuadro item carousel-thumbs d-flex flex-row flex-sm-column p-1" id="nav-1">
+            {% for photo in photos %}
+            <div class="card slide m-1">
+                <img class="card-img-top equal-1-1" src="{{ photo.image.url }}" alt="Image">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="d-flex flex-column py-20 container foreground min-vh-100">
+    <div class="row  align-items-center justify-content-center justify-content-lg-between my-auto">
+        <div class="col-md-10 col-lg-6 col-xl-5" data-aos="fade-up">
+        </div>
+        <div class=" col-md-10 col-lg-6 col-xl-5 inverted mb-5 mb-lg-0 text-center text-lg-start">
+            <h1 style="color:#B49359;" class="m-0 text-font-very-bold">
+                {% blocktrans trimmed %}
+                ZEICE Craft Company
+                {% endblocktrans %}
+            </h1>
+            <h3 class="title-font"><br>
+                <span>
+                    {% blocktrans trimmed %}
+                    – a company dedicated to the production of quality, certified and pure ice in the Spanish market.
+                    {% endblocktrans %}
+                </span>
+            </h3>
+            <div class="d-inline-flex align-items-center mb-0">
+            </div>
+        </div>
+    </div>
+</div>
+
+<figure class="background background-overlay"
+        style="background-image: url({% static 'Zeice/img/sello.jpg' %});  background-position: left;"
+        data-top-top="transform: scale(1);" data-top-bottom="transform: scale(1.2);"></figure>

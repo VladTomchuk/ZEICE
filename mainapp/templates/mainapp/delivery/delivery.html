@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block content %}
+<section class="py-15 py-xl-20 overflow-hidden services-bg inverted">
+    <div class="container foreground">
+
+        <div class="row justify-content-between align-items-center pb-10">
+            {% include './inc/_1_section_delivery.html' %}
+        </div>
+
+        <div class="row justify-content-center m-0">
+            {% include './inc/_2_section_distributors.html' %}
+        </div>
+    </div>
+
+    <img class="position-absolute top-0 start-0 translate-middle"
+         src="{% static 'Zeice/img/svg/pattern-lg-light.svg' %}"
+         alt="Image">
+</section>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% load i18n %}
+{% load static %}
+
+
+<div class="container foreground p-0">
+    <div class="row m-0 p-0">
+        <div class="col-12 col-sm-6 p- p-xl-5" data-aos="fade-up">
+            <h2 style="color:#B49359;" class="my-5 text-font-very-bold text-left">
+                {% blocktrans trimmed %}
+                We care about our consumers.
+                {% endblocktrans %}
+            </h2>
+            <h5 class="my-5 title-font fs-4">
+                {% blocktrans trimmed %}
+                It is ice grown in IceBlockMachine, the construction method
+                ice layer by layer for a certain time, the most expensive process
+                by the time of production, due to technology, when it freezes, the water gradually loses
+                oxygen
+                molecules (drying) also all solid impurities such as (Salt, Calcium, Iron, etc...) and as a
+                result , in its composition, transparent ice becomes more pure H2O than distilled water.
+                {% endblocktrans %}
+            </h5>
+        </div>
+        <div class="col-12 col-sm-6 d-flex align-items-center" data-aos="fade-up">
+            <div class="cuadro p-xl-5">
+                <img style="width:100%" src="{% static 'Zeice/img/paravozbar1.JPG'%}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
