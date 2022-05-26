@@ -5,48 +5,49 @@
 <form action="{% url 'contacts' %}" method="post" class="row g-3">
     {% csrf_token %}
     <div class="col-12">
-        <input
-                type="text"
-                class="form-control"
-                id="yourName"
-                name="message-name"
-                placeholder="{% trans 'Your Name' %}"
-                required >
+        {{ form.as_p }}
+<!--        <input-->
+<!--                type="text"-->
+<!--                class="form-control"-->
+<!--                id="yourName"-->
+<!--                name="message-name"-->
+<!--                placeholder="{% trans 'Your Name' %}"-->
+<!--                required >-->
+<!--    </div>-->
+
+<!--    <div class="col-12">-->
+<!--        <input-->
+<!--                type="text"-->
+<!--                class="form-control"-->
+<!--                id="yourPhone"-->
+<!--                name="message-phone"-->
+<!--                placeholder="{% trans 'Your phone' %}"-->
+<!--                required >-->
+<!--    </div>-->
+
+<!--    <div class="col-12">-->
+<!--        <input-->
+<!--                type="text"-->
+<!--                class="form-control"-->
+<!--                id="yourEmail"-->
+<!--                name="message-email"-->
+<!--                placeholder="{% trans 'Your e-mail' %}"-->
+<!--                required >-->
+<!--    </div>-->
+
+<!--    <div class="col-md-12">-->
+<!--        <textarea-->
+<!--                class="form-control"-->
+<!--                id="yourMessage"-->
+<!--                rows="3"-->
+<!--                name="message-comment"-->
+<!--                placeholder="comment">-->
+<!--        </textarea>-->
     </div>
 
-    <div class="col-12">
-        <input
-                type="text"
-                class="form-control"
-                id="yourPhone"
-                name="message-phone"
-                placeholder="{% trans 'Your phone' %}"
-                required >
-    </div>
-
-    <div class="col-12">
-        <input
-                type="text"
-                class="form-control"
-                id="yourEmail"
-                name="message-email"
-                placeholder="{% trans 'Your e-mail' %}"
-                required >
-    </div>
-
-    <div class="col-md-12">
-        <textarea
-                class="form-control"
-                id="yourMessage"
-                rows="3"
-                name="message-comment"
-                placeholder="{% trans 'Message' %}">
-        </textarea>
-    </div>
-
-    <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
+<!--    <div class="col-12">-->
+<!--        <div class="form-check">-->
+<!--            <input class="form-check-input" type="checkbox" id="gridCheck">-->
 <!--            <label class="form-check-label title-font small" for="gridCheck">-->
 <!--                {% blocktrans trimmed %}-->
 <!--                I accept the <a href="#" class=" underline">Terms-->
@@ -54,8 +55,8 @@
 <!--                accordance with Privacy Policy.-->
 <!--                {% endblocktrans %}-->
 <!--            </label>-->
-        </div>
-    </div>
+<!--        </div>-->
+<!--    </div>-->
 
     <div class="col-md-12 d-flex justify-content-center">
         <input

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-22 18:38+0200\n"
+"POT-Creation-Date: 2022-05-26 13:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: Zeice/settings.py:121
+#: Zeice/settings.py:123
 msgid "English"
 msgstr "Inglés"
 
-#: Zeice/settings.py:122
+#: Zeice/settings.py:124
 msgid "Spanish"
 msgstr "Español"
 
-#: Zeice/urls.py:27
+#: Zeice/urls.py:28
 msgid "admin/"
 msgstr ""
 
-#: mainapp/templates/mainapp/about/about.html:16
+#: mainapp/forms.py:7
+msgid "Your name"
+msgstr "Su nombre"
+
+#: mainapp/forms.py:8
+msgid "Your email"
+msgstr "Su correo"
+
+#: mainapp/forms.py:9
+msgid "Your number"
+msgstr "Su teléfono"
+
+#: mainapp/forms.py:10
+
+msgid "Message"
+msgstr "Mensaje"
+
+#: mainapp/templates/mainapp/about/inc/_1_section_main.html:8
 #: mainapp/templates/mainapp/home/inc/_1_section.html:11
 msgid "ZEICE Craft Company"
 msgstr "ZEICE Empresa Artesanal"
 
-#: mainapp/templates/mainapp/about/about.html:22
+#: mainapp/templates/mainapp/about/inc/_1_section_main.html:14
 #: mainapp/templates/mainapp/home/inc/_1_section.html:17
 msgid ""
 "– a company dedicated to the production of quality, certified and pure ice "
@@ -44,11 +61,11 @@ msgstr ""
 "– una empresa dedicada a la producción de hielo puro, certificado y de "
 "calidad en el mercado español."
 
-#: mainapp/templates/mainapp/about/about.html:138
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:9
 msgid "Why do we have more advantages ?"
 msgstr "¿Por qué tenemos más ventajas?"
 
-#: mainapp/templates/mainapp/about/about.html:143
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:14
 msgid ""
 "This ice is ideal for the preparation of cocktails or for cooling strong "
 "alcoholic drinks, since due to the lack of impurities in the hydration it "
@@ -61,46 +78,46 @@ msgstr ""
 "densa tiene una transferencia de calor muy diferente y se derrite mucho más "
 "lento. "
 
-#: mainapp/templates/mainapp/about/about.html:161
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:32
 #: mainapp/templates/mainapp/home/inc/_2_section.html:20
 msgid "Delivery - 6 days per week"
 msgstr "Reparto - 6 días a la semana"
 
-#: mainapp/templates/mainapp/about/about.html:185
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:52
 #: mainapp/templates/mainapp/home/inc/_2_section.html:28
 msgid "Support - 24/7"
 msgstr "Soporte - 24/7"
 
-#: mainapp/templates/mainapp/about/about.html:209
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:72
 #: mainapp/templates/mainapp/home/inc/_2_section.html:36
 msgid "Delivery emergency"
 msgstr "Entrega de emergencia"
 
-#: mainapp/templates/mainapp/about/about.html:233
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:92
 #: mainapp/templates/mainapp/home/inc/_2_section.html:48
 msgid "Delivery to whole Spain"
 msgstr "Reparto a toda España"
 
-#: mainapp/templates/mainapp/about/about.html:258
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:113
 #: mainapp/templates/mainapp/home/inc/_2_section.html:60
 msgid "Best prices"
 msgstr "Los mejores precios"
 
-#: mainapp/templates/mainapp/about/about.html:283
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:134
 #: mainapp/templates/mainapp/home/inc/_2_section.html:68
 msgid "Certificate quality"
 msgstr "Certificado de calidad"
 
-#: mainapp/templates/mainapp/about/about.html:314
+#: mainapp/templates/mainapp/about/inc/_3_section_advantages.html:165
 #: mainapp/templates/mainapp/home/inc/_2_section.html:84
 msgid "No minimum order"
 msgstr "Sin pedido mínimo"
 
-#: mainapp/templates/mainapp/about/about.html:347
+#: mainapp/templates/mainapp/about/inc/_4_section_about.html:9
 msgid "About Us"
 msgstr "Nosotros"
 
-#: mainapp/templates/mainapp/about/about.html:351
+#: mainapp/templates/mainapp/about/inc/_4_section_about.html:13
 msgid ""
 "Since the day of the company's creation in <span style=\"color:#B49359;"
 "\">2018</span>, every day we study the needs and preferences of our "
@@ -113,7 +130,7 @@ msgstr ""
 "nuestro producto para que podamos satisfacer cualquier deseo de nuestros "
 "clientes. "
 
-#: mainapp/templates/mainapp/about/about.html:361
+#: mainapp/templates/mainapp/about/inc/_4_section_about.html:23
 msgid ""
 "Good ice can be one of the most aesthetically appealing aspects of the "
 "cocktail, especially if this ice is made from purified water that is "
@@ -127,16 +144,16 @@ msgstr ""
 "no sólo refresca las bebidas, mientras se derrite se convierte en una parte "
 "vital del cóctel en sí y cambia elegantemente su sabor y textura."
 
-#: mainapp/templates/mainapp/about/about.html:377
+#: mainapp/templates/mainapp/about/inc/_5_section_clients.html:6
 #: mainapp/templates/mainapp/home/inc/_4_section.html:6
 msgid "Our clients"
 msgstr "Nuestros clientes"
 
-#: mainapp/templates/mainapp/about/about.html:408
+#: mainapp/templates/mainapp/about/inc/_6_section_ice_quality.html:9
 msgid "We care about our consumers."
 msgstr "Nos preocupamos por nuestros consumidores."
 
-#: mainapp/templates/mainapp/about/about.html:413
+#: mainapp/templates/mainapp/about/inc/_6_section_ice_quality.html:14
 msgid ""
 "It is ice grown in IceBlockMachine, the construction method ice layer by "
 "layer for a certain time, the most expensive process by the time of "
@@ -153,11 +170,11 @@ msgstr ""
 "resultado, en su composición, el hielo transparente se vuelve más puro H2O "
 "que el agua destilada. "
 
-#: mainapp/templates/mainapp/contacts/contacts.html:14
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:6
 msgid "Interested in working together? Contact us!"
 msgstr "¿Interesado a trabajar juntos? ¡Contáctenos!"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:19
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:12
 msgid ""
 "Contact us for get detailed information about: cooperation, ordering or "
 "feedback.<br/> We will be glad to answer all your questions!"
@@ -166,58 +183,62 @@ msgstr ""
 "cooperación, pedidos o comentarios.<br/> ¡Estaremos encantados de responder "
 "a todas sus preguntas!"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:26
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:20
 msgid "Location "
 msgstr "Ubicación"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:27
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:21
 msgid "Spain "
 msgstr "España"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:30
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:24
 msgid "Email "
 msgstr "Correo"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:34
+#: mainapp/templates/mainapp/contacts/inc/_1_section_contact_info.html:28
 #: mainapp/templates/mainapp/mail/contact-us/web-page-contact-us.html:26
 msgid "Phone"
 msgstr "Teléfono"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:51
+#: mainapp/templates/mainapp/contacts/inc/_2_section_contact_form.html:14
+#, fuzzy
+#| msgid "Name"
 msgid "Your Name"
 msgstr "Su nombre"
 
-#: mainapp/templates/mainapp/contacts/contacts.html:55
+#: mainapp/templates/mainapp/contacts/inc/_2_section_contact_form.html:24
 msgid "Your phone"
-msgstr "Su teléfono"
+msgstr ""
 
-#: mainapp/templates/mainapp/contacts/contacts.html:59
+#: mainapp/templates/mainapp/contacts/inc/_2_section_contact_form.html:34
 msgid "Your e-mail"
-msgstr "Su correo"
+msgstr ""
 
-#: mainapp/templates/mainapp/contacts/contacts.html:63
-msgid "Message"
-msgstr "Mensaje"
-
-#: mainapp/templates/mainapp/contacts/contacts.html:69
+#: mainapp/templates/mainapp/contacts/inc/_2_section_contact_form.html:52
+#, fuzzy
+#| msgid ""
+#| "I accept the <a href=\"#\" class=\" underline\">Terms & Conditions</a> "
+#| "and acknowledge that my information will be used in accordance with "
+#| "Privacy Policy."
 msgid ""
-"I accept the <a href=\"#\" class=\" underline\">Terms & Conditions</a> and "
-"acknowledge that my information will be used in accordance with Privacy "
-"Policy."
+"--> <!--                I accept the <a href=\"#\" class=\" underline"
+"\">Terms--> <!--                & Conditions</a> and acknowledge that my "
+"information will be used in--> <!--                accordance with Privacy "
+"Policy.--> <!--"
 msgstr ""
 "Acepto los <a href=\"#\" class=\" underline\">Términos y condiciones</a> y "
 "Reconozco que mi información será utilizada de acuerdo con Política de "
 "Privacidad "
 
-#: mainapp/templates/mainapp/contacts/contacts.html:78
+#: mainapp/templates/mainapp/contacts/inc/_2_section_contact_form.html:65
 msgid "Get in touch"
 msgstr "Contactar"
 
-#: mainapp/templates/mainapp/delivery/delivery.html:12
+#: mainapp/templates/mainapp/delivery/inc/_1_section_delivery.html:7
 msgid "Delivery and distribution"
 msgstr "Entrega y distribución"
 
-#: mainapp/templates/mainapp/delivery/delivery.html:17
+#: mainapp/templates/mainapp/delivery/inc/_1_section_delivery.html:12
 msgid ""
 "Our company is interested in the cooperation and development of the "
 "professional ice market throughout Spain. We are able to offer large "
@@ -235,7 +256,7 @@ msgstr ""
 "formar parte de la gran familia del mercado del hielo artesanal, contáctenos "
 "para obtener información detallada en contactos. "
 
-#: mainapp/templates/mainapp/delivery/delivery.html:48
+#: mainapp/templates/mainapp/delivery/inc/_2_section_distributors.html:6
 msgid "Our distributors"
 msgstr "Nuestros distribuidores"
 
@@ -276,7 +297,7 @@ msgid "Distribution"
 msgstr "Distribución"
 
 #: mainapp/templates/mainapp/home/inc/_3_section.html:64
-#: templates/inc/_footer.html:43 templates/inc/_nav.html:52
+#: templates/inc/_footer.html:43 templates/inc/_nav.html:51
 msgid "Refrigerators"
 msgstr "Refrigeradores"
 
@@ -285,12 +306,12 @@ msgid "Not just ice..."
 msgstr "No sólo hielo..."
 
 #: mainapp/templates/mainapp/home/inc/_3_section.html:104
-#: templates/inc/_nav.html:109
+#: templates/inc/_nav.html:108
 msgid "Rent of refrigerators for your bar."
 msgstr "Alquiler de arcón para su bar."
 
 #: mainapp/templates/mainapp/home/inc/_3_section.html:109
-#: templates/inc/_nav.html:114
+#: templates/inc/_nav.html:113
 msgid "On the subject of renting a refrigerator, contact us:"
 msgstr "Sobre el tema del alquiler de un arcón, contacta con nosotros:"
 
@@ -323,7 +344,6 @@ msgid "Name"
 msgstr "Su nombre"
 
 #: mainapp/templates/mainapp/mail/contact-us/web-page-contact-us.html:24
-
 msgid "Email"
 msgstr "Correo"
 
@@ -331,46 +351,46 @@ msgstr "Correo"
 msgid "Comment"
 msgstr "Comentario"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:58
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:28
 msgid "Additional Information"
 msgstr "Información adicional"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:65
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:38
 msgid "Size"
 msgstr "Tamaño"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:70
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:45
 msgid "Box weight"
 msgstr "Peso del caja"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:75
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:52
 msgid "Cube's quantity"
 msgstr "Cantidad de cubo"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:77
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:55
 msgid "units"
 msgstr "unidades"
 
-#: mainapp/templates/mainapp/view_ice_type/view_ice_type.html:87
-#: mainapp/templates/mainapp/view_zebartools_product/view_zebartools_product.html:110
+#: mainapp/templates/mainapp/view_ice_type/inc/_2_section_ice_info.html:66
+#: mainapp/templates/mainapp/view_zebartools_product/view_zebartools_product.html:58
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:405
 #: venv/lib/python3.10/site-packages/django/forms/formsets.py:412
 msgid "Order"
 msgstr "Pedir"
 
-#: mainapp/views.py:22 templates/inc/_footer.html:19 templates/inc/_nav.html:36
+#: mainapp/views.py:17 templates/inc/_footer.html:19 templates/inc/_nav.html:35
 msgid "Home"
 msgstr "Principal"
 
-#: mainapp/views.py:38 templates/inc/_footer.html:25 templates/inc/_nav.html:40
+#: mainapp/views.py:33 templates/inc/_footer.html:25 templates/inc/_nav.html:39
 msgid "About us"
 msgstr "Nosotros"
 
-#: mainapp/views.py:48
+#: mainapp/views.py:43
 msgid "Ice Types"
 msgstr "Tipos de hielo"
 
-#: mainapp/views.py:67 templates/inc/_footer.html:37 templates/inc/_nav.html:48
+#: mainapp/views.py:62 templates/inc/_footer.html:37 templates/inc/_nav.html:47
 msgid "Delivery"
 msgstr "Reparto"
 
@@ -378,11 +398,11 @@ msgstr "Reparto"
 msgid "Сontacts"
 msgstr "Contactos"
 
-#: templates/inc/_footer.html:31 templates/inc/_nav.html:44
+#: templates/inc/_footer.html:31 templates/inc/_nav.html:43
 msgid "Ice"
 msgstr "Hielo"
 
-#: templates/inc/_footer.html:53 templates/inc/_nav.html:60
+#: templates/inc/_footer.html:53 templates/inc/_nav.html:59
 msgid "Contacts"
 msgstr "Contactos"
 

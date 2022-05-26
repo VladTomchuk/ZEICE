@@ -19,6 +19,7 @@ from django.conf.urls.i18n import i18n_patterns
 from django.utils.translation import gettext_lazy as _
 from django.contrib import admin
 from django.urls import path, include
+
 # from mainapp.views import change_language
 
 
@@ -26,11 +27,8 @@ urlpatterns = [
     # path('i18n/', include('django_translation_flags.urls')),
     path(_('admin/'), admin.site.urls),
     path('', include('mainapp.urls')),
-    # path('change_language/',
-    #      change_language,
-    #      name='change_language')
+    path('captcha', include("captcha.urls"))
 ]
-
 
 urlpatterns += i18n_patterns(
     path('', include('mainapp.urls')),
